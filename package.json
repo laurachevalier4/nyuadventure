@@ -1,0 +1,25 @@
+{
+  "name": "nyu",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "react": "15.3.2",
+    "react-native": "0.34.1"
+  },
+  "main": "index.ios.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurachevalier4/nyuadventure.git"
+  },
+  "author": "Laura Chevalier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurachevalier4/nyuadventure/issues"
+  },
+  "homepage": "https://github.com/laurachevalier4/nyuadventure#readme",
+  "description": ""
+}
