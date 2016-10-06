@@ -8,17 +8,19 @@ import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 import StatusBarBackground from './components/StatusBarBackground';
 import TitleImage from './components/TitleImage';
-import FBLogin from '.components/FBLogin';
+import FBLogin from './components/FBLogin';
+import Login from './components/Login';
 
 class nyu extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <TitleImage />
         <StatusBarBackground style={{backgroundColor: "black"}}/>
+        <FBLogin />
         <Text style={{textAlign: 'center'}}>
           Welcome to my ios app!
         </Text>
-        <TitleImage style={{}}/>
       </View>
     );
   }

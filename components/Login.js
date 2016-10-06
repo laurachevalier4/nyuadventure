@@ -11,12 +11,12 @@ class Login extends Component {
     return (
       <View>
         <TextInput
-            style={{height: 40, backgroundColor: 'white', padding: 5, margin: 5}}
+            style={{width: 200, height: 40, backgroundColor: 'white', padding: 5, margin: 5}}
             placeholder="Your 5th grade email"
             onChangeText={(email) => this.setState({email})}
           />
           <TextInput
-              style={{height: 40, backgroundColor: 'white', padding: 5, margin: 5}}
+              style={{width: 200, height: 40, backgroundColor: 'white', padding: 5, margin: 5}}
               placeholder="Your super secret password"
               onChangeText={(password) => this.setState({password})}
             />
