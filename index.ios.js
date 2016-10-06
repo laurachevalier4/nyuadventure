@@ -3,22 +3,22 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-
+'use strict'
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import StatusBarBackground from './components/StatusBarBackground';
+import TitleImage from './components/TitleImage';
+import FBLogin from '.components/FBLogin';
 
 class nyu extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBarBackground style={{backgroundColor: "black"}}/>
         <Text style={{textAlign: 'center'}}>
           Welcome to my ios app!
         </Text>
+        <TitleImage style={{}}/>
       </View>
     );
   }
@@ -27,20 +27,17 @@ class nyu extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    flexDirection: "column",
+    alignItems: "stretch",
+    justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+
+  image: {
+    flex: 1
+  }
+
 });
 
 AppRegistry.registerComponent('nyu', () => nyu);

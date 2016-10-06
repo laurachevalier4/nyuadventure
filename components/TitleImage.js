@@ -8,8 +8,8 @@ class TitleImage extends Component {
         <View>
           <Image
             style={styles.resizeMode}
-            resizeMode={Image.resizeMode.cover}
-            source={require('../images/nyuadventure3.png')}
+            resizeMode={Image.resizeMode.contain}
+            source={require('../images/nyuadventure1.png')}
           />
         </View>
       )
